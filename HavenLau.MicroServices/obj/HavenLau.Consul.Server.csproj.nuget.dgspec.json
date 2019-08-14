@@ -1,0 +1,87 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
+  },
+  "projects": {
+    "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "projectName": "HavenLau.Consul.Server",
+        "projectPath": "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "NJsonSchema": {
+              "target": "Package",
+              "version": "[10.0.21, )"
+            },
+            "Namotion.Reflection": {
+              "target": "Package",
+              "version": "[1.0.6, )"
+            },
+            "consul": {
+              "target": "Package",
+              "version": "[0.7.2.6, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

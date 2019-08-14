@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "HavenLau.Consul.Client": {
+      "commandName": "Project",
+      "commandLineArgs": "ip=192.168.88.100 port=8801"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

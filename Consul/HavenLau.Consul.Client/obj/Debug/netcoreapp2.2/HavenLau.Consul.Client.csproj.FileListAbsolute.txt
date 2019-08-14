@@ -1,0 +1,11 @@
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\bin\Debug\netcoreapp2.2\HavenLau.Consul.Client.deps.json
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\bin\Debug\netcoreapp2.2\HavenLau.Consul.Client.runtimeconfig.json
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\bin\Debug\netcoreapp2.2\HavenLau.Consul.Client.runtimeconfig.dev.json
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\bin\Debug\netcoreapp2.2\HavenLau.Consul.Client.dll
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\bin\Debug\netcoreapp2.2\HavenLau.Consul.Client.pdb
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\obj\Debug\netcoreapp2.2\HavenLau.Consul.Client.csprojAssemblyReference.cache
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\obj\Debug\netcoreapp2.2\HavenLau.Consul.Client.csproj.CoreCompileInputs.cache
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\obj\Debug\netcoreapp2.2\HavenLau.Consul.Client.AssemblyInfoInputs.cache
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\obj\Debug\netcoreapp2.2\HavenLau.Consul.Client.AssemblyInfo.cs
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\obj\Debug\netcoreapp2.2\HavenLau.Consul.Client.dll
+D:\HavenLau\Code\HavenLau.MicroServices\Consul\HavenLau.Consul.Client\obj\Debug\netcoreapp2.2\HavenLau.Consul.Client.pdb
