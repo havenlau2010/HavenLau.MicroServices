@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <DebugType>portable</DebugType>
+    <AssemblyName>Receive</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Receive</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.2' ">
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.*" />
+  </ItemGroup>
+
+</Project>

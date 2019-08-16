@@ -12,10 +12,10 @@ namespace HavenLau.Consul.Server
     {
         public string ConsulHost { get; set; }
         public string ServiceName { get; set; }
-        public List<string> ServiceTags { get; set; }
+        public List<string> ServiceTags { get; set; } = new List<string>();
         public string ServiceIP { get; set; }
         public int ServicePort { get; set; }
-        public List<CheckItem> Checks { get; set; }
+        public List<CheckItem> Checks { get; set; } = new List<CheckItem>();
         public string UrlPrefix { get; set; } = "urlprefix-/";
         public class CheckItem
         {

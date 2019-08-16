@@ -1,2 +1,0 @@
-# HavenLau.MicroServices
- HavenLau.MicroServices

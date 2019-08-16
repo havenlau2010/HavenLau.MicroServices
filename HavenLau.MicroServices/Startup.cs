@@ -35,6 +35,7 @@ namespace HavenLau.Consul.Server
         {
 
             app.AddConsulData();
+            /*
             #region 注册Consul
             //注册Consul 
             string ip = Configuration["ip"];
@@ -70,7 +71,7 @@ namespace HavenLau.Consul.Server
                 }
             });
             #endregion
-
+            */
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
