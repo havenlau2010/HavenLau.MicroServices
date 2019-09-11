@@ -71,7 +71,12 @@ namespace EFCoreDemo.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            var lst  = lstUser.Where(x => x.Name == "AAAAA");
+            if (lst.Count() == 0)
+            {
+                return "aaaaaa";
+            }
+            return lst.Max(x=>x.Id).ToString();
         }
 
         // POST api/values
