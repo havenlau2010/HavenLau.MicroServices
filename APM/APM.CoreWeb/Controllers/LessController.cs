@@ -15,8 +15,9 @@ namespace APM.CoreWeb.Controllers
         public void less()
         {
             // ExceptionlessClient.Default.CreateLog("LessController", "Getting results", LogLevel.Info).Submit();
-            // throw new Exception($"Random AspNetCore Exception: {Guid.NewGuid()}");
             Log.ForContext<LessController>().Information("LessController information....");
+            throw new Exception($"Random AspNetCore Exception: {Guid.NewGuid()}");
+            
         }
     }
 }
