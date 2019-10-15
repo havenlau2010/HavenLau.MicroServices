@@ -39,8 +39,8 @@ namespace APM.CoreWeb
             // ExceptionlessClient.Default.Configuration.ServerUrl = Configuration.GetSection("Exceptionless:ServerUrl").Value;
             app.UseSerilogRequestLogging();
             // app.UseExceptionless("uHrHUJ1FBxygCRnLka0MRGRcmRGUB8jIUKrribfn");
-            ExceptionlessClient.Default.Configuration.ApiKey = Configuration.GetSection("Exceptionless:ApiKey").Value;
-            ExceptionlessClient.Default.Configuration.ServerUrl = Configuration.GetSection("Exceptionless:ServerUrl").Value;
+            ExceptionlessClient.Default.Configuration.ApiKey = Configuration.GetSection("ExceptionlessOnline:ApiKey").Value;
+            ExceptionlessClient.Default.Configuration.ServerUrl = Configuration.GetSection("ExceptionlessOnline:ServerUrl").Value;
             ExceptionlessClient.Default.Startup();
             app.UseMvc();
         }

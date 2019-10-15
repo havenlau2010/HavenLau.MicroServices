@@ -1,0 +1,4 @@
+2019-10-15 15:02:32.186 +08:00 [INF] Hello, Serilog!
+2019-10-15 15:02:32.213 +08:00 [WRN] Goodbye, Serilog.
+2019-10-15 15:18:45.824 +08:00 [INF] Hello, Serilog!
+2019-10-15 15:18:45.848 +08:00 [WRN] Goodbye, Serilog.
