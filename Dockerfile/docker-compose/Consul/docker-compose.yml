@@ -1,0 +1,52 @@
+version: '3.7'
+
+networks: 
+  mynet: 
+
+services: 
+  consul1: 
+    image: consul:latest
+    container_name: consul1
+    restart: always
+    networks: 
+       - mynet
+    ports: 
+      - 8300:8300
+      - 8301:8301
+      - 8301:8301/udp
+      - 8302:8302
+      - 8302:8302/udp
+      - 8500:8500
+      - 8600:8600
+      - 8600:8600/udp
+    command: agent -server -client=0.0.0.0 -bind=0.0.0.0 -advertise=192.168.88.112 -ui -bootstrap-expect=2 -node=consul1 
+  consul2: 
+    image: consul:latest
+    container_name: consul2
+    networks: 
+       - mynet
+    restart: always
+    command: agent -server -client=0.0.0.0 -bind=0.0.0.0 -retry-join=consul1 -node=consul2
+  consul3: 
+    image: consul:latest
+    container_name: consul3
+    networks: 
+       - mynet
+    restart: always
+    ports: 
+      - 8500:8500
+    command: agent -server -client=0.0.0.0 -bind=0.0.0.0 -retry-join=consul1 -ui -node=consul3
+  consul100: 
+    image: consul:latest
+    container_name: consul100
+    restart: always
+    ports: 
+      - 8300:8300
+      - 8301:8301
+      - 8301:8301/udp
+      - 8302:8302
+      - 8302:8302/udp
+      - 8500:8500
+      - 8600:8600
+      - 8600:8600/udp
+    command: agent -server -client=0.0.0.0 -bind=0.0.0.0 -advertise=192.168.88.101 -ui -retry-join=192.168.88.112 -node=consul100

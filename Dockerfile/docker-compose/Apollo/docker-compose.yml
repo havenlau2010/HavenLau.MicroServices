@@ -1,0 +1,36 @@
+version: '3.7'
+
+services: 
+  apollo: 
+    image: idoop/docker-apollo:latest
+    container_name: apollo
+    restart: always
+    environment: 
+      # 开启Portal,默认端口: 8070
+      PORTAL_DB: jdbc:mysql://192.168.88.101:3306/ApolloPortalDB?characterEncoding=utf8
+      PORTAL_DB_USER: root
+      PORTAL_DB_PWD: whlx8888
+      # 如果portal需要开启ldap或ad域验证,须设置该环境变量为TRUE
+      #PORTAL_LDAP: "TRUE"
+      
+      # 开启dev环境, 默认端口: config 8080, admin 8090
+      DEV_DB: jdbc:mysql://192.168.88.101:3306/ApolloConfigDBDev?characterEncoding=utf8
+      DEV_DB_USER: root
+      DEV_DB_PWD: whlx8888
+      
+      # 开启fat环境, 默认端口: config 8081, admin 8091
+      FAT_DB: jdbc:mysql://192.168.88.101:3306/ApolloConfigDBFat?characterEncoding=utf8
+      FAT_DB_USER: root
+      FAT_DB_PWD: whlx8888
+      # 若network_mode为host,则可修改端口,如下:
+      #FAT_CONFIG_PORT: 8050
+      #FAT_ADMIN_PORT: 8051
+           
+      # 指定远程uat地址
+      #UAT_URL: http://192.168.1.2:8080
+      
+      # 指定远程pro地址
+      #PRO_URL: http://www.example.com:8080
+    ports: 
+      - 9080:8080
+      - 9090:8090

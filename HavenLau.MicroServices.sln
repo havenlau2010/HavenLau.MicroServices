@@ -78,7 +78,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APM.CoreWeb", "APM\APM.Core
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Log", "Log", "{F22A13FF-37E0-42B3-8ABA-884CC4F22460}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "APM.SerilogDemo", "APM\APM.SerilogDemo\APM.SerilogDemo.csproj", "{E49952AE-B0A2-4306-8ADA-AA112912321E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APM.SerilogDemo", "APM\APM.SerilogDemo\APM.SerilogDemo.csproj", "{E49952AE-B0A2-4306-8ADA-AA112912321E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockerFile", "DockerFile", "{0115A895-178D-475B-9409-4D11EC225BCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NetCore", "NetCore", "{9278F93E-17FA-41B8-9F5F-FA259DEECFF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

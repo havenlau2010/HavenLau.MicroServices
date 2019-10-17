@@ -1,0 +1,13 @@
+# Use root/example as user/password credentials
+version: '3.7'
+
+services: 
+  gogs: 
+    image: gogs/gogs:latest
+    container_name: gogs
+    restart: always
+    ports: 
+      - 1022:22
+      - 3000:3000
+    volumes: 
+      - E:/gogs:/data

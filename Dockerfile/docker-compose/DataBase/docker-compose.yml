@@ -1,0 +1,28 @@
+version: '3.7'
+
+networks: 
+  kong-net: 
+
+services: 
+  mysql: 
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    ports: 
+      - 3306:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: whlx8888
+    volumes: 
+      - D:/mysql:/var/lib/mysql
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    container_name: mssql
+    restart: always
+    environment:
+      - MSSQL_SA_PASSWORD=whlx8888
+      - ACCEPT_EULA=Y
+      - MSSQL_PID=Enterprise
+    ports:
+      - "1433:1433"
+    volumes:
+      - "D:/MSSQLDataBase:/var/opt/mssql/data"

@@ -13,6 +13,8 @@ namespace EFCoreDemo.Controllers
         public string Name { get; set; }
 
         public string Nick { get; set; }
+
+        public bool Gender { get; set; }
     }
 
 

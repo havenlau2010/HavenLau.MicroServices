@@ -1,0 +1,26 @@
+# Use root/example as user/password credentials
+version: '3.7'
+
+services: 
+  db: 
+    image: mysql:5.7
+    container_name: mysql
+    restart: always
+    environment: 
+      MYSQL_ROOT_PASSWORD: whlx8888
+    ports: 
+      - 3306:3306
+    volumes: 
+      - E:/mysql:/var/lib/mysql
+#  mssql:
+#    image: mcr.microsoft.com/mssql/server:2017-latest
+#    container_name: mssql
+#    restart: always
+#    environment:
+#      - MSSQL_SA_PASSWORD=Password7!
+#      - ACCEPT_EULA=Y
+#      - MSSQL_PID=Enterprise
+#    ports:
+#      - 1433:1433
+#    volumes:
+#      - E:/MSSQLDataBase:/var/opt/mssql/data
