@@ -32,7 +32,7 @@ namespace CAPConsoleSubscribeDemo
                     };
                 });
                 
-                services.AddHostedService<Subscribe>();
+                // services.AddHostedService<Subscribe>();
                 services.AddSingleton<ICapSubscribe, Subscribe>();
             });
             return builder;

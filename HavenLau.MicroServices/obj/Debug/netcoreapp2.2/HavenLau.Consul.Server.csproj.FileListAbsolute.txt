@@ -3,7 +3,6 @@ D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcore
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\HavenLau.Consul.Server.runtimeconfig.dev.json
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\HavenLau.Consul.Server.dll
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\HavenLau.Consul.Server.pdb
-D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.csproj.CoreCompileInputs.cache
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.RazorAssemblyInfo.cache
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.RazorAssemblyInfo.cs
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.AssemblyInfoInputs.cache
@@ -11,3 +10,6 @@ D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcore
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.RazorTargetAssemblyInfo.cache
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.dll
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.pdb
+D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\appsettings.json
+D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
