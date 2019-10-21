@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  mssql:
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+      - 1433:1433
+    container_name: mssql
+    restart: on-failure
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Lwz3.131492653 
+    networks:
+      - mssql
+    volumes:
+      - mssqldata:/var/lib/mssql/data
+
+networks:
+  mssql:
+    driver: bridge
+    
+  
+volumes:
+  mssqldata:
+    driver: local
