@@ -33,6 +33,7 @@ namespace Identity.Server
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
+            services.AddSingleton<IHostedService, TaskService.MyTask>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -13,3 +13,4 @@ D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcore
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\appsettings.Development.json
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\appsettings.json
 D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\HavenLau\Code\HavenLau.MicroServices\HavenLau.MicroServices\obj\Debug\netcoreapp2.2\HavenLau.Consul.Server.csprojAssemblyReference.cache

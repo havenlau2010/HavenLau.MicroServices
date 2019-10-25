@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "PD_HIDS.Scheduler": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
