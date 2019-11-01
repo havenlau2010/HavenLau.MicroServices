@@ -1,19 +1,19 @@
 ﻿using System;
 
 
-namespace EFCore.Oracle.Demo2.Entity.Hids.His
+namespace EFCoreDemo.Entity
 {
     
     /// <summary>
     /// 苏大附二医住院患者表
     /// </summary>
-    public class SdfeyHisPatientInfo
+    public class SdfeyHisPatientInfo : BaseEntity
     {
-        public int Id { get; set; }
         /// <summary>
         /// 住院号
         /// </summary>
         public string PatientId { get; set; }
+
 
         /// <summary>
         /// 住院流水号

@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
+    "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
   },
   "projects": {
-    "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
+    "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "projectUniqueName": "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
         "projectName": "HavenLau.Consul.Server",
-        "projectPath": "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
-        "packagesPath": "C:\\Users\\HavenLau\\.nuget\\packages\\",
-        "outputPath": "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
+        "projectPath": "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\HavenLau\\Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\HavenLau\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

@@ -1,48 +1,40 @@
 ﻿using System;
 
 
-namespace EFCore.Oracle.Demo2.Entity.Hids.His
+namespace EFCoreDemo.Entity
 {
-    
     /// <summary>
-    /// 苏大附二医住院患者表
+    /// 苏大附二医门诊患者表
     /// </summary>
-    public class SdfeyHisPatientInfo
+    public class SdfeyHisOutPatientInfo : BaseEntity
     {
-        public int Id { get; set; }
         /// <summary>
-        /// 住院号
+        /// 就诊卡号
         /// </summary>
         public string PatientId { get; set; }
 
         /// <summary>
-        /// 住院流水号
+        /// 门诊号
         /// </summary>
-        public string InPatientNo { get; set; }
+        public string OutPatientNo { get; set; }
 
 
         /// <summary>
-        /// 病历号
+        /// 患者姓名
         /// </summary>
-        public string CardNo { get; set; }
-
-        /// <summary>
-        /// 姓名
-        /// </summary>
-        public string PatientName { get; set; }
-
+        public  string PatientName { get; set; }
 
 
         /// <summary>
         /// 性别
         /// </summary>
-        public string Sex { get; set; }
+        public  string Sex { get; set; }
 
 
         /// <summary>
-        /// 出生日期
+        /// 生日
         /// </summary>
-        public DateTime Birthday { get; set; }
+        public  DateTime Birthday { get; set; }
 
 
         /// <summary>
@@ -58,7 +50,7 @@ namespace EFCore.Oracle.Demo2.Entity.Hids.His
 
 
         /// <summary>
-        /// 地址
+        /// 联系地址
         /// </summary>
         public  string Address { get; set; }
 
@@ -70,13 +62,13 @@ namespace EFCore.Oracle.Demo2.Entity.Hids.His
 
 
         /// <summary>
-        /// 联系人关系
+        /// 与联系人关系
         /// </summary>
         public  string RelationShip { get; set; }
 
 
         /// <summary>
-        /// 联系人号码
+        /// 联系号码
         /// </summary>
         public  string ContatctPhone { get; set; }
 
@@ -96,42 +88,35 @@ namespace EFCore.Oracle.Demo2.Entity.Hids.His
         /// <summary>
         /// 医疗证号
         /// </summary>
-        public string InsuranceNO { get; set; }
+        public string InsuranceNo { get; set; }
 
 
         /// <summary>
         /// 科室名称
         /// </summary>
-        public string InpatientDepartment { get; set; }
+        public string OutPatientDepartment { get; set; }
 
 
         /// <summary>
-        /// 医师姓名(住院)
+        /// 医师姓名
         /// </summary>
-        public string InpatientDoctor { get; set; }
+        public string OutPatientDoctor { get; set; }
 
 
         /// <summary>
-        /// 病床号
+        /// 看诊日期
         /// </summary>
-        public string BedNO { get; set; }
-
-
-        /// <summary>
-        /// 入院日期
-        /// </summary>
-        public DateTime AdmissionDate { get; set; }
+        public DateTime SeeDate { get; set; }
     }
 
 
-    //public sealed class SdfeyHisPatientInfoMapper : ClassMapper<SdfeyHisPatientInfo>
+    //public sealed class SdfeyHisOutPatientInfoMapper : ClassMapper<SdfeyHisOutPatientInfo>
     //{
-    //    public SdfeyHisPatientInfoMapper()
+    //    public SdfeyHisOutPatientInfoMapper()
     //    {
-    //        Table("HIS.GETHISPATIENTINFO");
+    //        Table("HIS.GETHISOUTPATIENTINFO");
     //        Map(x => x.PatientId).Column("PatientId");
-    //        Map(x => x.InPatientNo).Column("InPatientNo");
-    //        Map(x => x.CardNo).Column("CardNo");
+    //        Map(x => x.OutPatientNo).Column("OutPatientNo");
     //        Map(x => x.PatientName).Column("PatientName");
     //        Map(x => x.Sex).Column("Sex");
     //        Map(x => x.Birthday).Column("Birthday");
@@ -143,11 +128,10 @@ namespace EFCore.Oracle.Demo2.Entity.Hids.His
     //        Map(x => x.ContatctPhone).Column("ContatctPhone");
     //        Map(x => x.ContatctMobile).Column("ContatctMobile");
     //        Map(x => x.InsuranceType).Column("InsuranceType");
-    //        Map(x => x.InsuranceNO).Column("InsuranceNO");
-    //        Map(x => x.InpatientDepartment).Column("InpatientDepartment");
-    //        Map(x => x.InpatientDoctor).Column("InpatientDoctor");
-    //        Map(x => x.BedNO).Column("BedNO");
-    //        Map(x => x.AdmissionDate).Column("AdmissionDate");
+    //        Map(x => x.InsuranceNo).Column("InsuranceNo");
+    //        Map(x => x.OutPatientDepartment).Column("OutPatientDepartment");
+    //        Map(x => x.OutPatientDoctor).Column("OutPatientDoctor");
+    //        Map(x => x.SeeDate).Column("SeeDate");
     //    }
     //}
 }
