@@ -134,13 +134,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HealthCheck", "HealthCheck"
 		HealthCheck\readme.md = HealthCheck\readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthCheckDemo", "HealthCheck\HealthCheckDemo\HealthCheckDemo.csproj", "{78A6F34C-8FE8-4A75-8672-E5A189D0EA06}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthCheckDemo", "HealthCheck\HealthCheckDemo\HealthCheckDemo.csproj", "{78A6F34C-8FE8-4A75-8672-E5A189D0EA06}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TodoApi", "EFCore\TodoApi.Swashbuckle\TodoApi.csproj", "{939D1174-EFC8-49F4-B581-B5B4177E6DC7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SignalR", "SignalR", "{498BE4C0-7945-4B44-B2FF-AAF9884A93E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalRDemo", "SignalRDemo\SignalRDemo\SignalRDemo.csproj", "{16F0AEC3-B971-49FE-9A97-4EC17A6173C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo", "SignalRDemo\SignalRDemo\SignalRDemo.csproj", "{16F0AEC3-B971-49FE-9A97-4EC17A6173C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Swagger", "Swagger", "{A980C015-A048-41A5-BED1-FFEAC57A1D21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -328,6 +330,14 @@ Global
 		{78A6F34C-8FE8-4A75-8672-E5A189D0EA06}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78A6F34C-8FE8-4A75-8672-E5A189D0EA06}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78A6F34C-8FE8-4A75-8672-E5A189D0EA06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{939D1174-EFC8-49F4-B581-B5B4177E6DC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939D1174-EFC8-49F4-B581-B5B4177E6DC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939D1174-EFC8-49F4-B581-B5B4177E6DC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939D1174-EFC8-49F4-B581-B5B4177E6DC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16F0AEC3-B971-49FE-9A97-4EC17A6173C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16F0AEC3-B971-49FE-9A97-4EC17A6173C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16F0AEC3-B971-49FE-9A97-4EC17A6173C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16F0AEC3-B971-49FE-9A97-4EC17A6173C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -383,6 +393,8 @@ Global
 		{CD7CDB18-55CB-4C00-B7FE-FAAC7C35F986} = {746C6D86-09C1-46A2-9542-E35F9460ECA0}
 		{9130B9B9-52DE-4DF2-9027-3423BDADACBA} = {CD7CDB18-55CB-4C00-B7FE-FAAC7C35F986}
 		{78A6F34C-8FE8-4A75-8672-E5A189D0EA06} = {383A8419-A52A-4B4E-A0B8-F5F8745A44A0}
+		{939D1174-EFC8-49F4-B581-B5B4177E6DC7} = {A980C015-A048-41A5-BED1-FFEAC57A1D21}
+		{16F0AEC3-B971-49FE-9A97-4EC17A6173C4} = {498BE4C0-7945-4B44-B2FF-AAF9884A93E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0360FED-D85C-4FF0-862F-A28D46A4F7CE}
