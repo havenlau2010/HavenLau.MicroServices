@@ -1,7 +1,33 @@
 version: '3.4'
 
 services:
-  #rabbitmq container
+  mssql:
+    image: microsoft/mssql-server-linux:2017-latest
+    ports:
+      - 1433:1433
+    container_name: mssql
+    restart: on-failure
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Lwz3.131492653 
+    networks:
+      - mssql
+    volumes:
+      - mssqldata:/var/lib/mssql/data
+  
+  mysql5: 
+    image: mysql:5.7
+    container_name: mysql5
+    restart: always
+    ports: 
+      - 3306:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: 123456
+    networks:
+      - mysql5
+    volumes: 
+      - mysql5data:/var/lib/mysql5/data
+
   rabbitmq:
     #use docker images
     image: rabbitmq:management-alpine
@@ -9,22 +35,20 @@ services:
     environment:
       - RABBITMQ_DEFAULT_USER:admin
       - RABBITMQ_DEFAULT_PASS:admin
-    networks:
-      - rabbitmq
     #ports setting
     ports:
-      - 15673:15672
-      - 5673:5672
+      - 15672:15672
+      - 5672:5672
     restart: always
     #volumes setting
     volumes:
-      - rabbitmqdata:/var/lib/rabbitmq 
+      - rabbitmqdata:/var/lib/rabbitmq/data 
     logging:
       driver: "json-file"
       options:
         max-size: "200k"
         max-file: "10"
-  
+
   redis:
     image: redis:alpine
     restart: on-failure
@@ -32,51 +56,36 @@ services:
       - 6379:6379  
     networks:
       - redis
-  
-  postgres:
-    image: postgres
-    container_name: db_postgres
-    restart: on-failure
-    environment:
-      POSTGRES_DB: postgres_db
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postpwd
-    ports:
-      - 4352:5432
-    networks:
-      - postgres
-    volumes:
-      - postgresqldata:/var/lib/postgresql/data    
 
-  # mysql:
-    # image: mysql
-    # container_name: local_mysql
-    # entrypoint: ['/entrypoint.sh', '--default-authentication-plugin=mysql_native_password']
-    # restart: always
-    # volumes:
-      # - mysqldata:/var/lib/mysql/
-    # ports:
-      # - 127.0.0.1:3306:3306
-    # networks:
-      # - mysql
-    # environment:
-      # - MYSQL_ROOT_PASSWORD=mysqlpwd
+  registry:
+    image: registry:latest
+    restart: always
+    ports:
+      - 5000:5000
+    volumes:
+      - registrydata:/var/lib/registry/data    
 
 networks:
   rabbitmq:
     driver: bridge
   redis:
     driver: bridge
-  postgres:
+  mssql:
     driver: bridge
-  # mysql:
-    # driver: bridge
+  mysql5:
+    driver: bridge
+  registry:
+    driver: bridge
     
   
 volumes:
+  mssqldata:
+    driver: local
+  mysql5data:
+    driver: local
   rabbitmqdata:
     driver: local
-  postgresqldata:
+  redisdata:
     driver: local
-  # mysqldata:
-    # driver: local
+  registrydata:
+    driver: local

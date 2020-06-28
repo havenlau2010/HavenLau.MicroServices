@@ -26,8 +26,14 @@ namespace CAPDemo
         {
             services.AddCap(option =>
             {
-                option.UseSqlServer("Server=192.168.88.101; Database=zxTest; User=sa; Password =whlx8888;");
-                option.UseRabbitMQ("localhost");
+                option.UseSqlServer("Server=.; Database=GreatWall; User=sa; Password =126713;");
+                option.UseRabbitMQ(mq =>
+                {
+                    mq.HostName = "localhost";
+                    mq.Port = 5673;
+                    mq.UserName = "admin";
+                    mq.Password = "123";
+                });
                 option.UseDashboard();
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);

@@ -35,7 +35,7 @@ namespace HavenLau.Ids.Data.Migrations.IdentityServer.PersistedGrantDb
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
+                        .HasColumnType("nvarchar(8000)")
                         .HasMaxLength(50000);
 
                     b.Property<string>("DeviceCode")
@@ -77,7 +77,7 @@ namespace HavenLau.Ids.Data.Migrations.IdentityServer.PersistedGrantDb
 
                     b.Property<string>("Data")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)")
+                        .HasColumnType("nvarchar(8000)")
                         .HasMaxLength(50000);
 
                     b.Property<DateTime?>("Expiration")

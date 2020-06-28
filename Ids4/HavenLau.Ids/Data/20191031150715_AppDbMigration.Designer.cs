@@ -31,7 +31,7 @@ namespace HavenLau.Ids.Data
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(256)")
@@ -47,7 +47,7 @@ namespace HavenLau.Ids.Data
                         .HasColumnType("datetimeoffset");
 
                     b.Property<string>("LoginName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("nvarchar(256)")
@@ -58,19 +58,19 @@ namespace HavenLau.Ids.Data
                         .HasMaxLength(256);
 
                     b.Property<string>("PasswordHash")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("PhoneNumber")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
                     b.Property<string>("RealName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("SecurityStamp")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");
@@ -80,7 +80,7 @@ namespace HavenLau.Ids.Data
                         .HasMaxLength(256);
 
                     b.Property<string>("addr")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<int>("age")
                         .HasColumnType("int");
@@ -114,7 +114,7 @@ namespace HavenLau.Ids.Data
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(256)")
@@ -142,10 +142,10 @@ namespace HavenLau.Ids.Data
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("RoleId")
                         .IsRequired()
@@ -166,10 +166,10 @@ namespace HavenLau.Ids.Data
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ClaimType")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("ClaimValue")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -191,7 +191,7 @@ namespace HavenLau.Ids.Data
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.Property<string>("UserId")
                         .IsRequired()
@@ -231,7 +231,7 @@ namespace HavenLau.Ids.Data
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(8000)");
 
                     b.HasKey("UserId", "LoginProvider", "Name");
 
