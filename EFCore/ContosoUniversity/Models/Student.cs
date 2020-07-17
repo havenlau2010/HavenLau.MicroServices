@@ -32,6 +32,6 @@ namespace ContosoUniversity.Models
             }
         }
 
-        public ICollection<Enrollment> Enrollments { get; set; }
+        public virtual IList<Enrollment> Enrollments { get; set; }
     }
 }
