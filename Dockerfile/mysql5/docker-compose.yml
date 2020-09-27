@@ -1,0 +1,23 @@
+version: '3.7'
+ 
+services: 
+  mysql5: 
+    image: mysql:5.7
+    container_name: mysql5
+    restart: always
+    ports: 
+      - 3306:3306
+    environment: 
+      MYSQL_ROOT_PASSWORD: 123456
+    networks:
+      - mysql5
+    volumes: 
+      - mysql5:/var/lib/mysql5/data
+
+networks:
+  mysql5:
+    driver: bridge
+    
+volumes:
+  mysql5:
+    driver: local   

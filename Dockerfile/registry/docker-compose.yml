@@ -1,0 +1,14 @@
+version: '3.7'
+  
+services: 
+    registry:
+      image: registry:latest
+      restart: always
+      ports:
+        - 8888:5000
+      volumes:
+        - registrydata:/var/lib/registry/data
+
+volumes:
+  registrydata:
+    driver: local
