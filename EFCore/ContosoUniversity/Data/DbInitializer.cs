@@ -8,7 +8,34 @@ namespace ContosoUniversity.Data
 {
     public static class DbInitializer
     {
-        public static void Initialize(SchoolContext context)
+        public static void Initialize(SchoolContext context) 
+        {
+            InitializeMaster(context);
+            InitializeSchool(context);
+        }
+
+        public static void InitializeMaster(SchoolContext context)
+        {
+            //context.Database.EnsureCreated();
+
+            // Look for any students.
+            if (context.Masters.Any())
+            {
+                return;   // DB has been seeded
+            }
+
+            var masters = new Master[]
+            {
+                new Master { MasterName = "Master1", Subs = new Sub[] { new Sub { SubName = "Master1-Sub1" }, new Sub { SubName = "Master1-Sub2" }, new Sub { SubName = "Master1-Sub3" } } },
+                new Master { MasterName = "Master2", Subs = new Sub[] { new Sub { SubName = "Master2-Sub1" }, new Sub { SubName = "Master2-Sub2" }, new Sub { SubName = "Master2-Sub3" } } },
+                new Master { MasterName = "Master3", Subs = new Sub[] { new Sub { SubName = "Master3-Sub1" }, new Sub { SubName = "Master3-Sub2" }, new Sub { SubName = "Master3-Sub3" } } }
+            };
+
+            context.Masters.AddRange(masters);
+            context.SaveChanges();
+        }
+
+        public static void InitializeSchool(SchoolContext context)
         {
             //context.Database.EnsureCreated();
 

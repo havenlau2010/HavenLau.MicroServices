@@ -22,8 +22,19 @@ namespace ContosoUniversity.Controllers
         // GET: Students
         public async Task<IActionResult> Index(int? id, int? courseID)
         {
-            var result =await _context.Students.ToListAsync();
+            var result = await _context.Students
+                .Include(x => x.Enrollments)
+                    .ThenInclude(x => x.Course).ToListAsync();
             return View(result);
+        }
+        [HttpGet,ActionName("List")]
+        public async Task<IActionResult> GetListAsync() 
+        {
+            var result = await _context.Students
+                .Include(x => x.Enrollments)
+                .ThenInclude(x => x.Course)
+                .ToListAsync();
+            return Ok(result);
         }
 
         // GET: Students/Details/5

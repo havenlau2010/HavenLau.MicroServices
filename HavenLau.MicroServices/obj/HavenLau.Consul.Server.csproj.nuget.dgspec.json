@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
+    "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
   },
   "projects": {
-    "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
+    "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "projectUniqueName": "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
         "projectName": "HavenLau.Consul.Server",
-        "projectPath": "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
+        "projectPath": "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "packagesPath": "C:\\Users\\HavenLau\\.nuget\\packages\\",
+        "outputPath": "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\HavenLau\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
@@ -82,7 +87,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 
 namespace ContosoUniversity.Models
 {
@@ -23,7 +24,7 @@ namespace ContosoUniversity.Models
 
         public int? InstructorID { get; set; }
 
-        public Instructor Administrator { get; set; }
-        public ICollection<Course> Courses { get; set; }
+        public virtual Instructor Administrator { get; set; }
+        public virtual IList<Course> Courses { get; set; }
     }
 }

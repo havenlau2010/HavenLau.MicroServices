@@ -21,8 +21,8 @@ namespace ContosoUniversity.Models
 
         public int DepartmentID { get; set; }
 
-        public Department Department { get; set; }
-        public ICollection<Enrollment> Enrollments { get; set; }
-        public ICollection<CourseAssignment> CourseAssignments { get; set; }
+        public virtual Department Department { get; set; }
+        public virtual IList<Enrollment> Enrollments { get; set; }
+        public virtual IList<CourseAssignment> CourseAssignments { get; set; }
     }
 }
