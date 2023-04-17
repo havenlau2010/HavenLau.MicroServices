@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  jsoneditor:
+    image: djmattyg007/jsoneditor
+    ports:
+      - 88:80
+    container_name: jsoneditor
+    restart: on-failure
+    networks:
+      - jsoneditor
+    volumes:
+      - jsoneditor:/var/lib/jsoneditor/data
+
+networks:
+  jsoneditor:
+    driver: bridge
+    
+  
+volumes:
+  jsoneditor:
+    driver: local
