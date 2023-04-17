@@ -1,0 +1,36 @@
+version: '3.7'
+ 
+services: 
+  oracle12c:
+#   image: wnameless/oracle-xe-11g-r2
+    image: truevoly/oracle-12c
+    container_name: oracle12c
+    environment:
+      # 时区上海
+      TZ: Asia/Shanghai
+      # IMPORT_FROM_VOLUME: true
+      ORACLE_ALLOW_REMOTE: "true"
+      ORACLE_PWD: Lwz3.131492653
+    ports:
+      - "15211:1521"
+      - "8088:8080"
+    volumes:
+      - ./data/oracle:/u01/app/oracle
+    privileged: true
+    restart: always
+    networks:
+      - oracle12c
+    deploy:
+      resources:
+        limits:
+          memory: 3G
+        reservations:
+          memory: 3G
+
+networks:
+  oracle12c:
+    driver: bridge
+    
+volumes:
+  oracle12c:
+    driver: local   
