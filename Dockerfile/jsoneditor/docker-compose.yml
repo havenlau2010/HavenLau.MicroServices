@@ -4,7 +4,7 @@ services:
   jsoneditor:
     image: djmattyg007/jsoneditor
     ports:
-      - 88:80
+      - 6082:80
     container_name: jsoneditor
     restart: on-failure
     networks:

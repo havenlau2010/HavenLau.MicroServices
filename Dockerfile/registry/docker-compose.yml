@@ -5,7 +5,7 @@ services:
       image: registry:latest
       restart: always
       ports:
-        - 8888:5000
+        - 10800:5000
       volumes:
         - registrydata:/var/lib/registry/data
 

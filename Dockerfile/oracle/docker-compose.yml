@@ -1,25 +1,30 @@
 version: '3.7'
  
 services: 
-  oracle12c:
+  oracle19c:
 #   image: wnameless/oracle-xe-11g-r2
-    image: truevoly/oracle-12c
-    container_name: oracle12c
+#   image: truevoly/oracle-12c
+#   image: registry.cn-hangzhou.aliyuncs.com/zhuyijun/oracle:19c
+    image: marcocimatti/oracle12.2.0.1-se2
+    container_name: oracle19c
     environment:
       # 时区上海
       TZ: Asia/Shanghai
       # IMPORT_FROM_VOLUME: true
-      ORACLE_ALLOW_REMOTE: "true"
-      ORACLE_PWD: Lwz3.131492653
+      ORACLE_SID: orcl
+      ORACLE_PDB: orclpdb
+      ORACLE_PWD: Lwz3131492653
+      ORACLE_EDITION: standard
+      ORACLE_CHARACTERSET: AL32UTF8
     ports:
-      - "15211:1521"
-      - "8088:8080"
+      - "10300:1521"
+      - "10310:8080"
     volumes:
-      - ./data/oracle:/u01/app/oracle
-    privileged: true
+      - /data/oracle19c/data:/opt/oracle/oradata
+      - /etc/localtime:/etc/localtime
     restart: always
     networks:
-      - oracle12c
+      - oracle19c
     deploy:
       resources:
         limits:
@@ -28,9 +33,9 @@ services:
           memory: 3G
 
 networks:
-  oracle12c:
+  oracle19c:
     driver: bridge
     
 volumes:
-  oracle12c:
+  oracle19c:
     driver: local   

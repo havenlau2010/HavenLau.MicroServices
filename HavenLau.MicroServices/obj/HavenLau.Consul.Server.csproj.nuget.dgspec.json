@@ -1,36 +1,36 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
+    "e:\\DevHome\\liuwz-workbench\\liuwz\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {}
   },
   "projects": {
-    "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
+    "e:\\DevHome\\liuwz-workbench\\liuwz\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "projectUniqueName": "e:\\DevHome\\liuwz-workbench\\liuwz\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
         "projectName": "HavenLau.Consul.Server",
-        "projectPath": "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
-        "packagesPath": "C:\\Users\\HavenLau\\.nuget\\packages\\",
-        "outputPath": "D:\\Code\\MyCode\\HavenLau.Code\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
+        "projectPath": "e:\\DevHome\\liuwz-workbench\\liuwz\\HavenLau.MicroServices\\HavenLau.MicroServices\\HavenLau.Consul.Server.csproj",
+        "packagesPath": "E:\\DevHome\\packages\\havenlau\\.nuget\\packages",
+        "outputPath": "e:\\DevHome\\liuwz-workbench\\liuwz\\HavenLau.MicroServices\\HavenLau.MicroServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "D:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\HavenLau\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp2.2": {
+            "targetAlias": "netcoreapp2.2",
             "projectReferences": {}
           }
         },
@@ -38,10 +38,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "netcoreapp2.2": {
+          "targetAlias": "netcoreapp2.2",
           "dependencies": {
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
@@ -83,11 +89,12 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,20 @@
+version: "3"
+services:
+  mrdoc:
+    image: docpht/docpht:latest
+    container_name: docpht-blog
+    restart: always
+    volumes:
+      - docpht-data:/var/www/app/src/config
+      - docpht-data:/var/www/app/data
+      - docpht-data:/var/www/app/pages
+      - docpht-data:/etc/nginx/ssl
+    environment:
+      - TZ=Asia/Shanghai
+
+    ports:
+      - "6083:80"
+
+volumes:
+  docpht-data:
+    driver: local

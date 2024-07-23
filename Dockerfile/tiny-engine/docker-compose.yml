@@ -1,0 +1,40 @@
+version: "3"
+services:
+  mrdoc:
+    image: verdaccio/verdaccio
+    container_name: verdaccio
+    restart: always
+    volumes:
+    environment:
+    ports:
+      - "6081:10086"
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql-with-mrdoc    # 这里名字不要修改,否则无法连接数据库.如果修改,请注意自行更改mrdoc的配置文件.
+    restart: always
+    volumes:
+      - mysql-data:/var/lib/mysql # 请注意修改 /path/to/you/dir 为您要存储mysql数据的目录绝对路径.
+    environment:
+      - TZ=Asia/Shanghai
+      - MYSQL_ROOT_PASSWORD=Jonnyan404!
+      - MYSQL_DATABASE=mrdoc
+      - MYSQL_USER=jonnyan404
+      - MYSQL_PASSWORD=www.mrdoc.fun
+    expose:
+      - "3306"
+    ports:
+      - "13306:3306"  # 如果不需要外部连接mysql,可注释此行+上一行.
+    command:
+      - "--character-set-server=utf8mb4"
+      - "--collation-server=utf8mb4_unicode_ci"
+
+
+# Volumes for persisting data, see https://docs.docker.com/engine/admin/volumes/volumes/
+volumes:
+  mrdoc-data:
+    driver: local
+  mysql-data:
+    driver: local

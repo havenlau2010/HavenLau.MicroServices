@@ -11,8 +11,8 @@ services:
       - RABBITMQ_DEFAULT_PASS:admin
     #ports setting
     ports:
-      - 15672:15672
-      - 5672:5672
+      - 10400:15672
+      - 10410:5672
     restart: always
     #volumes setting
     volumes:
