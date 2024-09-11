@@ -1,7 +1,7 @@
 version: "3"
 services:
   mrdoc:
-    image: jonnyan404/mrdoc-nginx:0.6.6-with-mysql
+    image: jonnyan404/mrdoc-nginx:0.9.2-with-mysql
     container_name: mrdoc-mysql
     restart: always
     volumes:
